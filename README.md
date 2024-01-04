@@ -31,7 +31,7 @@ text associated with the keyword 'hello' is copied back to your clipboard and di
 
 Example usage:
 
-`hello delete` the 'hello' text is deleted from your seceret vault.
+`hello delete` the 'hello' text is deleted from your secret vault.
 
 ### help
 
@@ -62,14 +62,34 @@ On mac, run
 
 `pip3 install pyperclip`
 
+### how to run this program
 
+* Fork or download this repo.
+* `cd` into the folder where you downloaded the file
+* Then, if you're on Windows, and assuming you have some text in your clipboard you want to save, run:
 
+```
+python multiclip.py <key> <operation>
+```
+Replace`key` with the name you want to use to identify the text and `operation` with what you want to do with the text (choices are `save`, `load`, and `delete`)
 
+On Linux or Mac, run
+```
+python3 multiclip.py <key> <operation> 
+```
+Replace`key` with the name you want to use to identify the text and `operation` with what you want to do with the text (choices are `save`, `load`, and `delete`).
 
+### Things to Improve
+---
 
+- An optional `--list` argument that returns a list of the keys you have saved in your vault. Please fork this repo, add the feature, and submit a pull request. 
 
+- The help message. The text that’s printed when you run the `--help` command is not properly formatted. The help text for each argument should appear on a new line to improve readability. 
 
+> [!WARNING]
+>  Many tools do exactly what Multiclip does and more. This is just a casual project, though important to me, so expect many flaws. I’m sure you’ll find lots of ways to help improve the code and add more useful features. Feel free to fork the repo and do your thing. 
 
+Multiclip was inspired by a project idea in chapter 7 of Al Sweigart's [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/). Al is also the author of `Pyperclip`
 
 
 

@@ -1,0 +1,7 @@
+# Ignore the follwing files
+
+*.bak
+*.dat
+*.dir
+
+

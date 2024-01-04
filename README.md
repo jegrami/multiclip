@@ -26,31 +26,42 @@ hello load
 text associated with the keyword 'hello' is copied back to your clipboard and displayed on the screen. 
 
 ### delete
+---
 
-`<key> delete` clears text saved to `<key>` in your vault.
+* `<key> delete` clears text saved to `<key>` in your clipboard vault.
 
-Example usage:
+  #### Example usage:
 
-`hello delete` the 'hello' text is deleted from your secret vault.
+  `hello delete`. The text saved to the keyword `hello` will be deleted from your seceret vault.
 
 ### help
+---
 
-Like most command line tools, running  the help command (`--help`) will print a help message to the screen. 
+As with most command line tools, running  the command `--help` will print a help message to the screen. 
 
-On Windows, the command will look like this (assuming you’re in the project directory):
+#### Example usage:
+
+On Windows, the command would look like this (assuming you’re in the project directory):
 
 `python multiclip.py --help`
 
 On Linux and Mac, it would be:
 
-`python3 multiclip.py --help`.
+`python3 multiclip.py --help`
 
 > [!NOTE]
 > Multiclip was tested only on Windows. But it should work fine for Linux and macOS
 
 ### Running Multiclip
+---
 
-The program utiliies arparse, shelve, and pypeclip modules argpase and shelve are standard libraries, so you need not install them. But you have to install pyperclip, a third party module for saving and pasting clipboard text. On Windows, run
+To run this program, you'll need to have `Python 3.x` and `Pyperclip` installed. Pyperclip is a Python third party module for copying and pasting clipboard text. 
+
+The recommended way to get the latest version of Python is from the official website [python.org](https://www.python.org/). Download the installer for your operating system. Once downloaded, double click it and follow the installation wizard to set up Python on your machine. 
+
+To confirm that Python is installed, open your terminal and run `python --version` if you are on Windows and `python3 --version` on Linux and Mac. Your Python Interpreter version number should be printed to your screen. 
+
+Now you can install `Pyperclip`. On Windows, run
 
 `python -m pip install pyperclip`
 
@@ -90,6 +101,3 @@ Replace`key` with the name you want to use to identify the text and `operation` 
 >  Many tools do exactly what Multiclip does and more. This is just a casual project, though important to me, so expect many flaws. I’m sure you’ll find lots of ways to help improve the code and add more useful features. Feel free to fork the repo and do your thing. 
 
 Multiclip was inspired by a project idea in chapter 7 of Al Sweigart's [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/). Al is also the author of `Pyperclip`
-
-
-

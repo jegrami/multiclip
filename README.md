@@ -60,7 +60,7 @@ To run this program, you'll need to have `Python 3.x` and `Pyperclip` installed.
 
 The recommended way to get the latest version of Python is from the official website [python.org](https://www.python.org/). Download the installer for your operating system. Once downloaded, double click it and follow the installation wizard to set up Python on your machine. 
 
-To confirm that Python is installed, open your terminal and run `python --version` if you are on Windows and `python3 --version` on Linux and Mac. Your Python Interpreter version number should be printed to your screen. 
+To confirm that Python is installed, open your terminal and run `python --version` if you are on Windows and `python3 --version` if you're on Linux and Mac. Your Python Interpreter version number should be printed to your screen. 
 
 Now you can install `Pyperclip`. On Windows, run
 

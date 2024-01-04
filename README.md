@@ -14,6 +14,7 @@ Example:
 `hello save` will save the text in your clipboard to a secret dictionary-like database using the word 'hello' as the key and the copied text as the value.
 
 ### load
+---
 
 * `<key> load` retrieves text previously saved under `<key>` and pastes it back into your clipboard.
 
